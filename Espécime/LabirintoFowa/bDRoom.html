@@ -40,6 +40,7 @@ function interact(what){
                 alert("Por favor, responda com S ou N.");
             }
     }while(chosen != 'yea');
+    if(chosen != 'yea'){
     do{
         var Pegar = prompt("Você irá pegar outra bola de gude? (S/N)");
             if(pegarBola == 'S' || pegarBola == 's'){
@@ -50,9 +51,11 @@ function interact(what){
                 alert("Bom, acho que você já pegou o suficiente");
                 if(bolasPegas == 1){
                 alert("Você bota sua bola de gude no bolso. Infelizmente, ela não está lá quando você vai checar ela novamente.");
+                atop = 'yea';
                 }
                 else if(bolasPegas < 10){
                 alert("Quando você vira pra trás, acidentalmente derruba suas " + bolasPegas + "Bolas de gude no chão, e elas o permeam.");
+                stop = 'yea;
                 }
                 else{
                 alert("Suas " + bolasPegas + "Bolas de gude não cabem em suas mãos, e você as derruba tentando andar. elas permeam o chão, sumindo.");
@@ -63,6 +66,7 @@ function interact(what){
                 alert("Acho que eu não te entendi. Responda com S ou N.");
             }
     }while(stop == 'yea');
+    }
     }
 }
 </script>
