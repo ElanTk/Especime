@@ -24,25 +24,27 @@ function interact(what){
     if(what == 'BolasDeGude'){
     alert("Neste pedestal, estão arranjadas várias bolas de gude. Você se sente um pouco inclinado a pegar uma...");
         var chosen = 'nah';
-        var stop;
+        var stop = 'nah';
         var bolasPegas = 0;
     do{
         var pegarBola = prompt("Você irá pegar uma bola de gude? (S/N)");
             if(pegarBola == 'S' || pegarBola == 's'){
                 alert("Você pega uma bola de gude. Outra bola de gude aparece no lugar que você a pegou.");
                 bolasPegas = bolasPegas + 1;
+                chosen = 'yea';
             }
             else if(pegarBola == 'N' || pegarBola == 'n'){
                 alert("Bom, essas bolas de gude não são suas, de qualquer forma.");
                 chosen = 'yea';
+                stop = 'yea';
             }
             else{
                 alert("Por favor, responda com S ou N.");
             }
-    }while(chosen != 'yea');
-    if(chosen != 'yea'){
+    }while(chosen == 'nah');
+    if(stop == 'nah'){
     do{
-        var Pegar = prompt("Você irá pegar outra bola de gude? (S/N)");
+        var pegarBola = prompt("Você irá pegar outra bola de gude? (S/N)");
             if(pegarBola == 'S' || pegarBola == 's'){
                 alert("Você pega outra bola de gude. Uma bola de gude aparece no lugar que você a pegou.");
                 bolasPegas = bolasPegas + 1;
@@ -50,22 +52,22 @@ function interact(what){
             else if(pegarBola == 'N' || pegarBola == 'n'){
                 alert("Bom, acho que você já pegou o suficiente");
                 if(bolasPegas == 1){
-                alert("Você bota sua bola de gude no bolso. Infelizmente, ela não está lá quando você vai checar ela novamente.");
-                atop = 'yea';
+                alert("Você coloca sua bola de gude no bolso. Infelizmente, ela não está lá quando você vai checar ela novamente.");
+                stop = 'yea';
                 }
                 else if(bolasPegas < 10){
-                alert("Quando você vira pra trás, acidentalmente derruba suas " + bolasPegas + "Bolas de gude no chão, e elas o permeam.");
-                stop = 'yea;
+                alert("Quando você vira pra trás, acidentalmente derruba suas " + bolasPegas + " Bolas de gude no chão, e elas o permeam.");
+                stop = 'yea';
                 }
                 else{
-                alert("Suas " + bolasPegas + "Bolas de gude não cabem em suas mãos, e você as derruba tentando andar. elas permeam o chão, sumindo.");
+                alert("Suas " + bolasPegas + " Bolas de gude não cabem em suas mãos, e você as derruba tentando andar. elas permeam o chão, sumindo.");
                 }
                 stop = 'yea';
             }
             else{
                 alert("Acho que eu não te entendi. Responda com S ou N.");
             }
-    }while(stop == 'yea');
+    }while(stop == 'nah');
     }
     }
 }
