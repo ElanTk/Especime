@@ -1,0 +1,26 @@
+body { text-align: justify;  font: 1.5em Brush Script MT, Brush Script Std, cursive; line-height: 1.0em; background: #333; color: #000000;}
+h2{ text-align: center;}
+#paragrafin{width: 300px;
+            margin: 2px 2px 2px 2px;
+            text-align: justify;}
+#paragrafinLeft{float: right;
+            width: 300px;
+            padding: 20px 20px 3px 20px;
+            margin: 2px 2px 2px 2px;
+            text-align: justify;}
+#paragrafinRight{float: left;
+            width: 300px;
+            padding: 20px 20px 3px 20px;
+            margin: 2px 2px 2px 2px;
+            text-align: justify;}
+#paragrafinGrande{margin: 2px 2px 2px 2px;
+            padding: 20px 20px 3px 20px;
+            text-align: justify;}
+#paragrafinGrandeFinal{margin: 2px 2px 2px 2px;
+            padding: 20px 20px 3px 20px;
+            text-align: justify;
+            color: #6b1313;}
+#wrap { padding: 10px 10px 3px 10px; width: 760px; margin:20px auto; background: #c5b9ae;}
+#left { float: left; width: 180px; background: #947a65; margin-bottom: 10px; margin-top: 20px; }
+#right { margin-bottom: 10px; float: right; margin-top: 10px; padding-left: 10px ; }
+#footer { font-size: 11px; text-align: center; border-top: 1px solid #ccc; padding: 10px 5px; }

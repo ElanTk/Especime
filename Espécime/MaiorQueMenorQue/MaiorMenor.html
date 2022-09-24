@@ -1,0 +1,194 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Cores</title>
+<meta http-equiv="Content-Language" content="English" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+<script type="text/javascript">
+    function MaiorQueMenorQue(){
+    var i = 3;
+    var score = 0;
+    var userHighscore = 0;
+        do{
+        if(score < 5){
+    var a = Math.floor(Math.random() * 10);
+    var b = Math.floor(Math.random() * 10);
+        }
+        else if(score < 10){
+    var a = Math.floor(Math.random() * 100);
+    var b = Math.floor(Math.random() * 100);
+        }
+        else if(score < 15){
+    var a = Math.floor(Math.random() * 10 * (Math.round(Math.random()) * 2 - 1));
+    var b = Math.floor(Math.random() * 10 * (Math.round(Math.random()) * 2 - 1));
+        }
+        else if(score < 20){
+    var a = Math.floor(Math.random() * 100 * (Math.round(Math.random()) * 2 - 1) );
+    var b = Math.floor(Math.random() * 100 * (Math.round(Math.random()) * 2 - 1) );
+        }
+        else if(score < 30){
+    var a = Math.floor(Math.random() * 100 * (Math.round(Math.random()) * 2 - 1) );
+    var b = Math.floor(Math.random() * 100 * (Math.round(Math.random()) * 2 - 1) );
+        }
+        else if(score < 40){
+    var a = Math.floor(Math.random() * 250 * (Math.round(Math.random()) * 2 - 1) );
+    var b = Math.floor(Math.random() * 250 * (Math.round(Math.random()) * 2 - 1) );
+        }
+        else if(score < 45){
+    var a1 = Math.floor(Math.random() * 10 * (Math.round(Math.random()) * 2 - 1) );
+    var a2 = Math.floor(Math.random() * 10 * (Math.round(Math.random()) * 2 - 1) );
+    var b1 = Math.floor(Math.random() * 10 * (Math.round(Math.random()) * 2 - 1) );
+    var b2 = Math.floor(Math.random() * 10 * (Math.round(Math.random()) * 2 - 1) );
+    var a = a1 + a2;
+    var b = b1 + b2;
+        }
+        else if(score == 54){
+    var a1 = Math.floor(Math.random() * 20 * (Math.round(Math.random()) * 2 - 1) );
+    var a2 = Math.floor(Math.random() * 20 * (Math.round(Math.random()) * 2 - 1) );
+    var a3 = Math.floor(Math.random() * 20 * (Math.round(Math.random()) * 2 - 1) );
+    var a4 = Math.floor(Math.random() * 20 * (Math.round(Math.random()) * 2 - 1) );
+    var b1 = Math.floor(Math.random() * 20 * (Math.round(Math.random()) * 2 - 1) );
+    var b2 = Math.floor(Math.random() * 20 * (Math.round(Math.random()) * 2 - 1) );
+    var b3 = Math.floor(Math.random() * 20 * (Math.round(Math.random()) * 2 - 1) );
+    var b4 = Math.floor(Math.random() * 20 * (Math.round(Math.random()) * 2 - 1) );
+    var a = (a1 * a2) + (a3 * a4);
+    var b = (b1 * b2) + (a3 * a4);
+        }
+        else if(score != 55){
+    var a1 = Math.floor(Math.random() * 100 * (Math.round(Math.random()) * 2 - 1) );
+    var a2 = Math.floor(Math.random() * 100 * (Math.round(Math.random()) * 2 - 1) );
+    var b1 = Math.floor(Math.random() * 100 * (Math.round(Math.random()) * 2 - 1) );
+    var b2 = Math.floor(Math.random() * 100 * (Math.round(Math.random()) * 2 - 1) );
+    var a = a1 + a2;
+    var b = b1 + b2;
+        }
+        else if(score == 55){
+            var a = 1;
+            var b = 1;
+            alert("Parabéns, parece que você derrotou o mais forte dos números!");
+            alert("Eu não tenho nada para te dar, mas posso te dizer algo que o principal me disse para dizer...");
+            alert("Basicamente, que [Qrt2Z], e que é o primeiro de três... Mas sei lá o que significa.");
+            //Se você resolveu ver o código em vez de tentar, parabéns, Você estragou a 
+            // brincadeira, e a diversão que você teria. Valeu.
+            //Eu deixei esses pedaços pensarem para fazer algo legal, mas justo, para podermos nos divertir
+            // com quem quisesse se aventurar no site daquele velho. Eu até planejei uma recompensa legal,
+            // mas você estragou tudo. Parabéns.
+            alert("De qualquer forma, não tem desafio maior agora.");
+            alert("Mas se quiser, pode aumentar sua pontuação, mas a dificuldade continuará a mesma.");
+            alert("Caso continuar seja seu desejo, por favor, escreva '='");
+            alert("Caso queira ver melhor esse meu projeto (ou sair daqui), escreva 'SAIR'");
+        }
+    alert("Números seguidos: " + score + "      Número Final: 55.      Responda 'SAIR' a qualquer momento para acabar com o jogo!");
+    if(score < 40){
+        var simbol = prompt(a + " [?] " + b)
+    }
+    else if(score == 54){
+        alert("Esse daqui é o mais difícil de todos, considere como um chefe. Boa sorte!");
+        var simbol = prompt("((" + a1 + ") * (" + a2 + ")) + ((" + a3 + ") * (" + a4 + ")) [?] ((" + b1 + ") * (" + b2 + ")) + ((" + b3 + ") * (" + b4 + "))");
+    }
+    else if(score != 55){
+        var simbol = prompt("(" + a1 + ") + (" + a2 + ") [?] (" + b1 + ") + (" + b2 + ")");
+    }
+    else{
+        var simbol = prompt("De novo, '=' para continuar com o desafio, Sair para acabar.");
+    }
+        if(simbol == '>' && a > b){
+            alert("Estás correto!");
+            score = score + 1;
+            if(userHighscore < score)
+                userHighscore = score;
+        }
+        else if(simbol == '<' && a < b){
+            alert("Estás correto!");
+            score = score + 1;
+            if(userHighscore < score)
+                userHighscore = score;
+        }
+        else if(simbol == '=' && a == b){
+            alert("Estás correto!");
+            score = score + 1;
+            if(userHighscore < score)
+                userHighscore = score;
+
+        }
+        else if(simbol='SAIR'){
+            alert("Bom... Não ligue para a bagunça...");
+            alert("Ah, quase esqueci! Sua pontuação mais alta foi '" + userHighscore + "'");
+            i = 232;
+        }
+        else{
+            alert("INCORRETO");
+            score = 0;
+        }
+        }while(i != 232)
+    }
+
+    </script>
+</head>
+<body>
+
+<div id="wrap">
+
+<div id="header">
+<h1><a href="#">MaiorQue MenorQue</a></h1>
+<h2>(Ou igual, as vezes)</h2>
+</div>
+
+<div id="right">
+<div class="articles">
+    <li><a href="../index.html">Voltar para a página principal!</a></li> 
+</div>
+<div class="articles">
+     . . . . . . . . ____. . . . . . . .<BR>
+&nbsp;. . . . . . . /:::/|. . . . . . .<BR>
+     . . . . . . /:::/:::| . . . . . . .<BR>
+&nbsp;. . . . /:::/::::::|. . . . . . .<BR>
+     . . . /:::/::::::::/. . . . . . . .<BR>
+&nbsp;. ./__/::::::::/|:| . . . . . . .<BR>
+     . . |::|:::::/. ||:|. . . . . . . .<BR>
+&nbsp;. .|::|::/. . .||:| . . . . . . . .<BR>
+     . . |__/:|. . . ||:|. . . . . . . .<BR>
+&nbsp;. . .||:| . . .||:| . . . . . . . .<BR>
+     . . . ||:|. . . ||:|. . . . . . . .<BR>
+&nbsp;. . .||:| . . .||:/ . . . . . . . .<BR>
+     . . . ||:|. . . /:::::\ . . . . . .<BR>
+&nbsp;. . .||:| . /:::::::::::\ . . . . .<BR>
+     . . . ||:|/:::::::::::::::::\ . . .<BR>
+&nbsp;. . /:::::::<button onclick="MaiorQueMenorQue()">Jogar MqMq?</button>:::::::::\ . .<BR>
+     . . .\:::::::::::::::::::::::::/. .<BR>
+&nbsp;. . .||\:::::::::::::::::::/|:| . .<BR>
+     . . . ||:|.\:::::::::::::/. ||:|. .<BR>
+&nbsp;. . .||:| . .\:::::::/. . .||:| . .<BR>
+     . . . ||:|. . ||\::/. . . . ||:|. .<BR>
+&nbsp;. . .||:| . .||:|:| . . . .||:| . .<BR>
+     . . . ||:|. . ||:|:|. . . . ||:|. .<BR>
+&nbsp;. . .||:| . .||:|:/ . . . .||:| . .<BR>
+     . . . ||:|. . ||:|. . . . . ||:|. .<BR>
+&nbsp;. . .||:| . .||:| . . . . .||:| . .<BR>
+     . . . ||:/. . ||:|. . . . . ||:/. .<BR>
+&nbsp;. . . . . . .||:| . . . . . . . . .<BR>
+     . . . . . . . ||:|. . . . . . . . .<BR>
+&nbsp;. . . . . . .||:/ . . . . . . . . .<BR>
+     . . . . . . . . . . . . . . . . . .<BR>
+
+</div>
+<div class="articles"></div>
+<div class="articles">
+<BR>
+<BR>
+<BR>
+<BR>
+</div>
+</div>
+
+<div style="clear: both;"> </div>
+
+<div id="footer">
+Host e programador fowa: <a href="#">#3</a>
+</div>
+</div>
+
+
+</body>
+</html>

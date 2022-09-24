@@ -1,0 +1,54 @@
+*{ margin: 0; padding: 0; }*
+body { text-align: Arial black;  font: .9em Arial, Sans-Serif; line-height: 1.8em; background: #333; color: #444; }
+a {COLOR: #0c0c0c; text-decoration: none;}
+a:visited {COLOR: #080808; text-decoration: none;}
+a:hover {COLOR: rgb(51, 51, 51); text-decoration: underline;}
+h1 { text-shadow: 2px 2px 2px #f3eeee;}
+h2 { margin: 0 0 10px; padding: 10px 0 3px; text-shadow: 1px 1px 1px #000000;}
+h3 { padding-left: 10px; color: #fff; background: #d40c0c url(imagem.jpg) repeat-x; font-size: 1em; height: 24px; line-height: 24px; text-shadow: 1px 1px 1px #000000;}
+ul {  padding: 0; margin: 0 0 10px;}
+li { list-style-type: none;}
+p { margin: 5px 0 10px 0; }
+img { border: none; }
+
+#header {
+background: #f8f5f5 url(ucrania.jpg) repeat-x;
+height: 100px;
+border-radius: 10px;
+}
+#header h1 {
+font-size: 30px;
+font-weight: 100;
+letter-spacing: -1px;
+padding: 22px 0 5px 10px;
+}
+#header h1 a {
+color: #fff;
+text-decoration: none;
+}
+#header h1 a:hover {
+color: #000;
+text-decoration: none;
+}
+#header h2 {
+color: #eee;
+font-size: 19px;
+font-weight: 100;
+padding: 0 0 0 11px;
+letter-spacing: -1px;
+line-height: 12px;
+}
+
+#wrap { padding: 10px 10px 3px 10px; width: 760px; margin:20px auto; background: #fff;}
+#left { float: left; width: 180px; background: #f5f1f1; margin-bottom: 10px; margin-top: 20px; border: 1px dotted #0f0f0f;}
+#left ul { padding: 5px 10px 10px 10px; margin: 0; }
+#right { margin-bottom: 10px; float: right; width: 550px; padding: 0 10px 10px 10px; margin-top: 10px;}
+	
+#footer { font-size: 11px; text-align: center; border-top: 1px solid #ccc; padding: 10px 5px; }
+
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+   
+   }
